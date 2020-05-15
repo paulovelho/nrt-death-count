@@ -9,8 +9,8 @@ var pw = 12;
 
 function appendP(graph, fraction) {
 	let i = document.createElement('i');
-	if(fraction>0) {
-		i.style.width = 12/fraction + "px";
+	if(fraction) {
+		i.style.width = 12 * fraction + "px";
 	}
 	document
 		.getElementById("necro-"+graph)
@@ -29,17 +29,17 @@ function fillGraph(graphId, name, deaths) {
 		counters[id]++;
 		appendP(graph);
 		if(counters[id] > totals[id]-1) {
-			let extra = (totals[id]*scale) - (counters[id]*scale);
+			let extra = totals[id] - counters[id];
 			if(extra) {
 				appendP(graph, extra);
 			}
-			document.getElementById(graph + "-count").innerHTML = (totals[id])*10;
+			document.getElementById(graph + "-count").innerHTML = (totals[id])*scale;
 			speed += 10;
 			return;
 		}
 
 		document.getElementById(graph + "-count").innerHTML = (counters[id])*scale;
-//		window.scrollTo(0,document.body.scrollHeight);
+		window.scrollTo(0,document.body.scrollHeight);
 		window.setTimeout(() => addP(id), speed);
 	}
 
@@ -56,13 +56,18 @@ function clearGraph(graphId) {
 }
 
 
-
+function simulate() {
+	fillGraph(4, "Covid19 - Brasil", 14455);
+	fillGraph(3, "11 de setembro", 2996);
+	fillGraph(2, "soldados americanos mortos em Omaha Beach no Dia D", 2499);
+	fillGraph(1, "Titanic", 1517);
+}
 
 
 
 
 /*
-fillGraph(4, "Covid - Brasil", 12461);
+fillGraph(4, "Covid - Brasil", 14455);
 fillGraph(3, "11 de setembro", 2996);
 fillGraph(2, "soldados americanos mortos em Omaha Beach no Dia D", 2499);
 fillGraph(1, "Titanic", 1517);

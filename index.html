@@ -42,10 +42,20 @@
 	<div class="row graphs">
 		<div class="graph-control" id="graph0">
 			<div class="control-panel">
+				<select name="item1" id="item1"></select>
+				<select name="item2" id="item2"></select>
+				<select name="item3" id="item3"></select>
+				<select name="item4" id="item4"></select>
+				<hr/>
 				<button onclick="simulate();">Simulate</button>
 			</div>
-			<div class="graph-col">
-				<i></i> = 10 pessoas
+			<div class="graph-col graph-scale">
+				<i></i> = 
+				<select id="scale" onchange="setScale()">
+					<option value="10">10 pessoas</option>
+					<option value="25">25 pessoas</option>
+					<option value="50">50 pessoas</option>
+				</select>
 			</div>
 		</div>
 

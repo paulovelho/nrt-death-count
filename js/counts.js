@@ -1,4 +1,4 @@
-let compare = [
+var tragedies = [
 	{
 		id: "9-11",
 		name: "11 de setembro",

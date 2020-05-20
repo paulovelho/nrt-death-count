@@ -66,8 +66,23 @@ a:hover {
 }
 
 
+
+
+.quote {
+	width: 800px;
+	margin: 100px auto 0;
+	font-style: oblique;
+	color: #777;
+}
+.quote .author {
+	padding-top: 20px;
+	margin-left: 150px;
+	font-style: normal;
+	color: #444;
+}
+
 .graphs {
-	margin: 70px auto;
+	margin: 50px auto;
 	border-top: 1px solid black;
 	width: 1200px;
 	min-height: 800px;

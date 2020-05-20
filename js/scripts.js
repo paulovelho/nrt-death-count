@@ -57,13 +57,16 @@ function clearGraph(graphId) {
 
 
 /* ======================== PARAMS ================= */
+function defaultItems() {
+	return "covid-brasil,titanic,9-11,mulan";
+}
 function getQueryStringValue (key) {  
 	return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  
 }  
 
 function loadQuery () {
 	let items = getQueryStringValue('compare');
-	if(!items) return;
+	if(!items) items = defaultItems();
 	items = items.split(',');
 	let compare = counts.filter(i => items.indexOf(i.id) >= 0);
 	compare.sort((a, b) => (a.count > b.count) ? 1 : -1);

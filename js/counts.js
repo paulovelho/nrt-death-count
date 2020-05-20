@@ -1,13 +1,25 @@
 var tragedies = [
 	{
+		id: "mulan",
+		name: "Avalanche do filme Mulan",
+		count: 1237,
+		active: true,
+	},
+	{
 		id: "9-11",
 		name: "11 de setembro",
 		count: 2996,
 		active: true,
 	},
 	{
+		id: "brasilww2",
+		name: "Baixas brasileiras na Segunda Guerra",
+		count: 471,
+		active: true,
+	},
+	{
 		id: "omaha",
-		name: "soldados americanos mortos em Omaha Beach no Dia D",
+		name: "soldados americanos em Omaha Beach no Dia D",
 		count: 2499,
 		active: true,
 	},
@@ -21,7 +33,7 @@ var tragedies = [
 		id: "brumadinho",
 		name: "Brumadinho",
 		count: 254,
-		active: true,
+		active: false,
 	},
 	{
 		id: "the-impossible",
@@ -33,6 +45,18 @@ var tragedies = [
 		id: "h1n1",
 		name: "Gripe suína (2009)",
 		count: 18036,
+		active: true,
+	},
+	{
+		id: "covid-brasil",
+		name: "Covid - Brasil (até 20/maio)",
+		count: 18859,
+		active: true,
+	},
+	{
+		id: "covid-day",
+		name: "Covid - Brasil somente dia 19 de maio",
+		count: 1179,
 		active: true,
 	}
 ];

@@ -49,14 +49,14 @@ var tragedies = [
 	},
 	{
 		id: "covid-brasil",
-		name: "Covid - Brasil (até 20/maio)",
-		count: 18859,
+		name: "Covid - Brasil (até 08/agosto)",
+		count: 100000,
 		active: true,
 	},
 	{
 		id: "covid-day",
-		name: "Covid - Brasil somente dia 19 de maio",
-		count: 1179,
+		name: "Covid - Brasil somente dia 04 de agosto",
+		count: 1394,
 		active: true,
 	}
 ];

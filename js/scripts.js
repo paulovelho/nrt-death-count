@@ -58,7 +58,7 @@ function clearGraph(graphId) {
 
 /* ======================== PARAMS ================= */
 function defaultItems() {
-	return "covid-brasil,titanic,9-11,mulan";
+	return "covid-day,titanic,9-11,mulan";
 }
 function getQueryStringValue (key) {  
 	return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));  

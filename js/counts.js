@@ -49,8 +49,8 @@ var tragedies = [
 	},
 	{
 		id: "covid-brasil",
-		name: "Covid - Brasil (até 08/agosto)",
-		count: 100000,
+		name: "Covid - Brasil (até 28/janeiro)",
+		count: 221676,
 		active: true,
 	},
 	{

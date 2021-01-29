@@ -55,8 +55,8 @@ var tragedies = [
 	},
 	{
 		id: "covid-day",
-		name: "Covid - Brasil somente dia 04 de agosto",
-		count: 1394,
+		name: "Covid - Brasil somente dia 28 de janeiro",
+		count: 1439,
 		active: true,
 	}
 ];

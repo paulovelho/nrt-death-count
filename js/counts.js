@@ -50,13 +50,13 @@ var tragedies = [
 	{
 		id: "covid-brasil",
 		name: "Covid - Brasil (até 24/fevereiro)",
-		count: 251661,
+		count: 257562,
 		active: true,
 	},
 	{
 		id: "covid-day",
-		name: "Covid - Brasil somente dia 25 de fevereiro",
-		count: 1582,
+		name: "Covid - Brasil somente dia 02 de março",
+		count: 1726,
 		active: true,
 	}
 ];

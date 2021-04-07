@@ -55,8 +55,8 @@ var tragedies = [
 	},
 	{
 		id: "covid-day",
-		name: "Covid - Brasil somente dia 31 de março",
-		count: 3950,
+		name: "Covid - Brasil somente dia 06/04/2021",
+		count: 4211,
 		active: true,
 	}
 ];
